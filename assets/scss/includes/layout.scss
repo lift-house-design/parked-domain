@@ -1,0 +1,45 @@
+/*
+|--------------------------------------------------------------------------
+| Layout
+|--------------------------------------------------------------------------
+*/
+
+#account {
+	text-align: right;
+	background-color: darken($color_white,5%);
+	font-size: 12px;
+	padding: 7px 14px;
+
+	input[type="text"],
+	input[type="password"] {
+		background-color: $color_white;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 11px;
+		color: lighten($color_black,40%);
+
+		&:hover {
+			color: $color_blue;
+		}
+	}
+
+	input,
+	a {
+		margin: 0 5px;
+	}
+}
+
+header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	padding: 20px;
+	border-bottom: 1px solid darken($color_white,5%);	
+	color: $color_blue;
+}
+
+#contents {
+	padding-bottom: 30px;
+}

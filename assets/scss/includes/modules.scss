@@ -1,0 +1,358 @@
+/*
+|--------------------------------------------------------------------------
+| Modules
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
+| Module - Well
+|--------------------------------------------------------------------------
+*/
+.well {
+	padding: 20px;
+	background-color: #eee;
+
+	& > *:first-child {
+		margin-top: 0 !important;
+	}
+
+	& > *:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - Button
+|--------------------------------------------------------------------------
+*/
+.button {
+	display: inline-block;
+	text-align: center;
+	background-color: lighten($color_black,40%);
+	color: $color_white;
+	padding: 5px 10px;
+	font-weight: 300;
+	font-size: 12px;
+	border: 0;
+	@include border-radius(5px);
+	text-decoration: none;
+
+	&:hover {
+		background-color: lighten($color_black,45%);
+	}
+
+	&:visited {
+		color: $color_white;
+	}
+
+	&.blue {
+		background-color: $color_blue;
+
+		&:hover {
+			background-color: lighten($color_blue,5%);
+		}
+	}
+
+	&.green {
+		background-color: $color_green;
+
+		&:hover {
+			background-color: lighten($color_green,5%);
+		}
+	}
+
+	&.red {
+		background-color: $color_darkred;
+
+		&:hover {
+			background-color: lighten($color_darkred,5%);
+		}
+	}
+
+	&.primary {
+		@extend .button.blue;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - Errors
+|--------------------------------------------------------------------------
+*/
+.errors {
+	border: 1px solid darken($color_red, 10%);
+	background-color: lighten($color_red,45%);
+	margin: 15px 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - Notifications
+|--------------------------------------------------------------------------
+*/
+.notifications {
+	border: 1px solid $color_blue;
+	background-color: lighten($color_blue, 45%);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - DataTable
+|--------------------------------------------------------------------------
+*/
+.dataTables_wrapper {
+	@include clearfix;
+
+	.dataTables_options {
+		@include clearfix;
+		background-color: darken($color_white,5%);
+		padding: 5px 10px;
+		margin-bottom: 15px;
+	}
+
+	.dataTables_length,
+	.dataTables_filter,
+	.dataTables_info,
+	.dataTables_paginate {
+		line-height: 32px;
+		font-size: 11px;
+	}
+
+	.dataTables_length,
+	.dataTables_filter {
+		input,
+		select {
+			margin: 0 5px;
+		}
+	}
+
+	.dataTables_filter {
+		float: left;
+		margin-left: 30px;
+	}
+
+	.dataTables_paginate {
+		line-height: auto;
+		height: auto;
+
+		&.paging_full_numbers {
+			@include clearfix;
+
+			.paginate_button,
+			.paginate_active,
+			.paginate_button_disabled {
+				/* Reset dataTable styles */
+				@include border-radius(0);
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				background: transparent;
+
+				/* Our styles */
+				background-color: lighten($color_black,25%);
+				/* For some reason, dataTables css uses !important
+				on the color style for these buttons */
+				color: darken($color_white,5%) !important;
+				padding: 0 10px;
+
+				&:hover {
+					background-color: lighten($color_black,30%);
+				}
+
+				&:last-child {
+					/*border-right: 0;*/
+				}
+			}
+
+			.paginate_active {
+				background-color: lighten($color_black,30%);
+				color: lighten($color_blue,30%) !important;
+			}
+		}
+	}
+
+	.dataTables_info {
+		padding: 0 15px;
+	}
+
+	.dataTable {
+		border-bottom: 5px solid lighten($color_black,25%);
+
+		th,
+		td {
+			padding: 7px 14px;
+		}
+
+		thead {
+			th,
+			td {
+				background-color: lighten($color_black,25%);
+				color: $color_white;
+
+				&.sorting,
+				&.sorting_asc,
+				&.sorting_desc {
+					cursor: pointer;
+				}
+
+				&.sorting_asc,
+				&.sorting_desc {
+					background-color: lighten($color_black,30%);
+					color: lighten($color_blue,30%);
+				}
+			}
+		}
+
+		tbody {
+			tr.odd,
+			tr.even {
+				background-color: transparent;
+
+				td,
+				td.sorting_1 {
+					background-color: transparent;
+				}
+			}
+
+			tr.odd {
+				background-color: darken($color_white,2%);
+
+				&:hover {
+					background-color: lighten($color_blue,55%);
+				}
+			}
+
+			tr.even {
+				background-color: darken($color_white,4%);
+
+				&:hover {
+					background-color: lighten($color_blue,55%);
+				}
+			}
+
+			td {
+				&.controls {
+					width: 150px;
+
+					.button {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - Form Field
+|--------------------------------------------------------------------------
+*/
+
+.field {
+	padding: 5px 0;
+
+	label {
+		margin-right: 10px;
+		color: lighten($color_black,40%);
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+
+	.element {
+		display: inline-block;
+
+		&.readonly {
+			span {
+				position: relative;
+				top: 2px;
+			}
+		}
+
+		&.captcha {
+			.captcha-image {
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+			input[type="text"] {
+				margin-top: 5px;
+			}
+		} 
+	}
+
+	&.checkbox,
+	&.radio {
+		label {
+			cursor: pointer;
+			text-transform: none;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+	}
+
+	&.required {
+		label:after {
+			content: " *";
+			color: darken($color_red,10%);
+		}
+	}
+
+	&.aligned {
+		padding: 10px 0;
+
+		label {
+			display: inline-block;
+			width: 100px;
+			font-size: 12px;
+			vertical-align: top;
+			padding-top: 5px;
+		}
+
+		&.checkbox,
+		&.radio {
+			label {
+				width: auto;
+				padding-top: 0;
+				vertical-align: baseline;
+			}
+		}
+	}
+
+	&.stacked {
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-size: 11px;
+			
+		}
+	}
+}
+
+.aligned .field {
+	@extend .field.aligned;
+}
+
+.stacked .field {
+	@extend .field.stacked;
+}
+
+.buttons {
+	background-color: darken($color_white,5%);
+	padding: 10px;
+	border-top: 1px solid darken($color_white,15%);
+	margin-top: 15px;
+
+	a,
+	.button,
+	input[type="submit"],
+	input[type="button"] {
+		margin-right: 10px;
+	}
+}

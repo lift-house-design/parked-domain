@@ -1,0 +1,609 @@
+/*
+|--------------------------------------------------------------------------
+| Variables
+|--------------------------------------------------------------------------
+*/
+
+$color_black: #000;
+$color_white: #fff;
+$color_blue: #0072c6;
+$color_red: #ff0000;
+
+$page_width: 980px;
+
+/*-----------------------------------------------------------------------*/
+
+@import 'includes/mixins.scss';
+@import 'includes/animations.scss';
+
+/*
+|--------------------------------------------------------------------------
+| Animations
+|--------------------------------------------------------------------------
+*/
+
+@import 'includes/helpers.scss';
+
+/*
+|--------------------------------------------------------------------------
+| Helpers
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
+| Base
+|--------------------------------------------------------------------------
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+	font-family: 'Open Sans',sans-serif;
+	color: lighten($color_black,30%);
+	font-size: 13px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+
+h1,
+h2 {
+	margin: 15px 0;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 20px;
+	color: lighten($color_black,50%);
+}
+
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+
+h3 {
+	font-size: 14px;
+	text-transform: uppercase;
+	border-bottom: 1px solid lighten($color_black,50%);
+	color: $color_blue;
+	padding-bottom: 3px;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 13px;
+}
+
+h4 {
+	color: $color_blue;
+}
+
+h6 {
+	color: lighten($color_black,50%);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Base - Forms
+|--------------------------------------------------------------------------
+*/
+
+input,
+textarea,
+select {
+	&:focus {
+		outline: 0;
+	}
+}
+
+input,
+textarea,
+select {
+	border: 1px solid darken($color_white,20%);
+	padding: 5px;
+	background-color: darken($color_white,5%);
+	@include border-radius(4px);
+	width: 300px;
+
+	&:focus {
+		background-color: darken($color_white,4%);
+		border-color: $color_blue;
+	}
+
+	&.small {
+		width: 200px;
+	}
+
+	&.large {
+		width: 400px;
+	}
+
+	&.x-large {
+		width: 500px;
+	}
+
+	&[type="submit"],
+	&[type="button"] {
+		@extend .primary.button;
+		width: auto;
+		border: 0;
+		color: $color_white;
+		padding: 5px 10px;
+		font-weight: 300;
+	}
+}
+
+textarea {
+	height: 100px;
+
+	&.small {
+		height: 50px;
+	}
+
+	&.large {
+		height: 150px;
+	}
+
+	&.x-large {
+		height: 200px;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: auto;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Base - Description List
+|--------------------------------------------------------------------------
+*/
+dl {
+	margin-left: 15px;
+
+	dt {
+		float: left;
+		font-weight: bold;
+		color: lighten($color_black,50%);
+		width: 100px;
+	}
+
+	dd {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Modules
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
+| Module - Form Field
+|--------------------------------------------------------------------------
+*/
+
+.field {
+	padding: 5px 0;
+
+	label {
+		margin-right: 10px;
+		color: lighten($color_black,40%);
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+
+	.element {
+		display: inline-block;
+	}
+
+	&.checkbox,
+	&.radio {
+		label {
+			cursor: pointer;
+			text-transform: none;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+	}
+
+	&.required {
+		label:after {
+			content: " *";
+			color: darken($color_red,10%);
+		}
+	}
+
+	&.aligned {
+		padding: 10px 0;
+
+		label {
+			display: inline-block;
+			width: 100px;
+			font-size: 12px;
+			vertical-align: top;
+			padding-top: 5px;
+		}
+
+		&.checkbox,
+		&.radio {
+			label {
+				width: auto;
+				padding-top: 0;
+				vertical-align: baseline;
+			}
+		}
+	}
+
+	&.stacked {
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-size: 11px;
+			
+		}
+	}
+}
+
+.aligned .field {
+	@extend .field.aligned;
+}
+
+.stacked .field {
+	@extend .field.stacked;
+}
+
+.buttons {
+	background-color: darken($color_white,5%);
+	padding: 10px;
+	border-top: 1px solid darken($color_white,15%);
+	margin-top: 15px;
+
+	a,
+	.button,
+	input[type="submit"],
+	input[type="button"] {
+		margin-right: 10px;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - Main Administration Button
+|--------------------------------------------------------------------------
+*/
+.navigation-button {
+	display: block;
+	text-align: center;
+	background-color: lighten($color_black,40%);
+	color: $color_white;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
+	@include border-radius(10px);
+
+	&:hover {
+		background-color: $color_blue;
+	}
+
+	&:visited {
+		color: $color_white;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - DataTable
+|--------------------------------------------------------------------------
+*/
+.dataTables_wrapper {
+	@include clearfix;
+
+	.dataTables_options {
+		@include clearfix;
+		background-color: darken($color_white,5%);
+		padding: 5px 10px;
+		margin-bottom: 15px;
+	}
+
+	.dataTables_length,
+	.dataTables_filter,
+	.dataTables_info,
+	.dataTables_paginate {
+		line-height: 32px;
+		font-size: 11px;
+	}
+
+	.dataTables_length,
+	.dataTables_filter {
+		input,
+		select {
+			margin: 0 5px;
+		}
+	}
+
+	.dataTables_filter {
+		float: left;
+		margin-left: 30px;
+	}
+
+	.dataTables_paginate {
+		line-height: auto;
+		height: auto;
+
+		&.paging_full_numbers {
+			/*border-top: 1px solid lighten($color_black,40%);*/
+			@include clearfix;
+
+			.paginate_button,
+			.paginate_active,
+			.paginate_button_disabled {
+				/* Reset dataTable styles */
+				@include border-radius(0);
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				background: transparent;
+
+				/* Our styles */
+
+				background-color: lighten($color_black,25%);
+				/* For some reason, dataTables css uses !important
+				on the color style for these buttons */
+				color: darken($color_white,5%) !important;
+				padding: 0 10px;
+				/*border-right: 1px solid lighten($color_black,40%);*/
+
+				&:hover {
+					background-color: lighten($color_black,30%);
+				}
+
+				&:last-child {
+					/*border-right: 0;*/
+				}
+			}
+
+			.paginate_active {
+				background-color: lighten($color_black,30%);
+				color: lighten($color_blue,30%) !important;
+			}
+		}
+	}
+
+	.dataTables_info {
+		padding: 0 15px;
+	}
+
+	.dataTable {
+		border-bottom: 5px solid lighten($color_black,25%);
+
+		th,
+		td {
+			padding: 7px 14px;
+		}
+
+		thead {
+			th,
+			td {
+				background-color: lighten($color_black,25%);
+				color: $color_white;
+
+				&.sorting,
+				&.sorting_asc,
+				&.sorting_desc {
+					cursor: pointer;
+				}
+
+				&.sorting_asc,
+				&.sorting_desc {
+					background-color: lighten($color_black,30%);
+					color: lighten($color_blue,30%);
+				}
+			}
+		}
+
+		tbody {
+			tr.odd,
+			tr.even {
+				background-color: transparent;
+
+				td,
+				td.sorting_1 {
+					background-color: transparent;
+				}
+			}
+
+			tr.odd {
+				background-color: darken($color_white,2%);
+
+				&:hover {
+					background-color: lighten($color_blue,55%);
+				}
+			}
+
+			tr.even {
+				background-color: darken($color_white,4%);
+
+				&:hover {
+					background-color: lighten($color_blue,55%);
+				}
+			}
+
+			td {
+				&.controls {
+					width: 150px;
+
+					.button {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - Button
+|--------------------------------------------------------------------------
+*/
+.button {
+	display: inline-block;
+	text-align: center;
+	background-color: lighten($color_black,40%);
+	color: $color_white;
+	padding: 5px 10px;
+	font-weight: 300;
+	font-size: 12px;
+	border: 0;
+	@include border-radius(5px);
+
+	&:hover {
+		background-color: lighten($color_black,45%);
+	}
+
+	&:visited {
+		color: $color_white;
+	}
+
+	&.primary {
+		background-color: $color_blue;
+
+		&:hover {
+			background-color: lighten($color_blue,5%);
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Module - Errors
+|--------------------------------------------------------------------------
+*/
+.errors {
+	border: 1px solid darken($color_red, 10%);
+	background-color: lighten($color_red,45%);
+	margin: 15px 0;
+}
+
+.notifications {
+	border: 1px solid $color_blue;
+	background-color: lighten($color_blue, 45%);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Layout
+|--------------------------------------------------------------------------
+*/
+
+header {
+	position: fixed;
+	background-color: lighten($color_black,25%);
+	left: 0;
+	right: 0;
+	top: 0;
+	line-height: 40px;
+	z-index: 1000;
+
+	#logo {
+		font-size: 20px;
+		color: #fff;
+		padding: 0 15px;
+		font-weight: 300;
+		line-height: 40px;
+		float: left;
+	}
+
+	nav {
+		float: left;
+		line-height: 40px;
+		margin-left: 20px;
+
+		a,
+		a:visited {
+			color: darken($color_white,5%);
+			float: left;
+			font-size: 11px;
+			text-transform: uppercase;
+			padding: 0 10px;
+			border-right: 1px solid lighten($color_black,40%);
+
+			&:last-child {
+				border-right: 0;
+			}
+
+			&:hover,
+			&.selected {
+				background-color: lighten($color_black,30%);
+			}
+
+			&.selected {
+				color: lighten($color_blue,30%);
+			}
+		}
+	}
+
+	#account {
+		float: right;
+		color: darken($color_white,5%);
+		font-size: 12px;
+		margin-right: 15px;
+
+		a {
+			color: lighten($color_blue,30%);
+			font-weight: bold;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		strong {
+			color: lighten($color_blue,30%);
+		}
+	}
+}
+
+#content {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Pages
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
+| Page - User
+|--------------------------------------------------------------------------
+*/
+
+#create-user {
+	float: right;
+	margin-top: 3px;
+}
