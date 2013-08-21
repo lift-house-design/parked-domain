@@ -53,7 +53,10 @@ class Site extends App_Controller
 
 		$domain=get_bare_hostname($_SERVER['HTTP_HOST']);
 
-		$this->asides['well_content']='site/content/'.$domain.'.php';
+		if(fileexists(APPPATH.'/views/site/content/'.$domain.'.php'))
+			$this->asides['well_content']='site/content/'.$domain.'.php';
+		else
+			$this->asides['well_content']='site/content/default.php';
 	}
 
 	public function captcha()
