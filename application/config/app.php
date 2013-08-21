@@ -20,15 +20,28 @@ $config['dev_mode']=TRUE;
 |
 |--------------------------------------------------------------------------
 */
-$config['database']=array(
-	'hostname'=>'localhost',
-	'username'=>'root',
-	'password'=>'root',
-	'database'=>'domainforsale',
-	'dbdriver'=>'mysql',
-	'db_debug'=>$config['dev_mode'],
-);
-
+if($config['dev_mode']===TRUE)
+{
+        $config['database']=array(
+                'hostname'=>'localhost',
+                'username'=>'root',
+                'password'=>'root',
+                'database'=>'domainforsale',
+                'dbdriver'=>'mysql',
+                'db_debug'=>$config['dev_mode'],
+        );
+}
+else
+{
+        $config['database']=array(
+                'hostname'=>'localhost',
+                'username'=>'thomas',
+                'password'=>'Dsb6Zf3npPi8',
+                'database'=>'thomas_domainforsale',
+                'dbdriver'=>'mysql',
+                'db_debug'=>$config['dev_mode'],
+        );
+}
 /*
 |--------------------------------------------------------------------------
 | Domain Configuration
