@@ -52,8 +52,132 @@ $config['domains']=array(
 		'name'=>'Austin Feature',
 		'ga_code'=>'UA-XXXXX-X',
 	),
-	'domainforsale.com'=>array(
-		'name'=>'Domain For Sale',
+	'austinhousehunting.com'=>array(
+		'name'=>'Austin House Hunting',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'austinjunkcar.com'=>array(
+		'name'=>'Austin Junk Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'bostonfeature.com'=>array(
+		'name'=>'Boston Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'bottletronic.com'=>array(
+		'name'=>'Bottle Tronic',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'canadafeature.com'=>array(
+		'name'=>'Canada Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'cashedcar.com'=>array(
+		'name'=>'Cashed Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'cashoutmycar.com'=>array(
+		'name'=>'Cash Out My Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'dallasfeature.com'=>array(
+		'name'=>'Dallas Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'dallasjunkcar.com'=>array(
+		'name'=>'Dallas Junk Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'foundnowtext.com'=>array(
+		'name'=>'Found Now Text',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'heyscrapit.com'=>array(
+		'name'=>'Hey Scrap It',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'houstonfeature.com'=>array(
+		'name'=>'Houston Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'lajunkcar.com'=>array(
+		'name'=>'LA Junk Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'lifthouseholdings.com'=>array(
+		'name'=>'Lift House Holdings',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'likemyhouse.com'=>array(
+		'name'=>'Like My House',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'losangelesfeature.com'=>array(
+		'name'=>'Los Angeles Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'miamifeature.com'=>array(
+		'name'=>'Miami Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'myquickid.com'=>array(
+		'name'=>'My Quick ID',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'newyorkfeature.com'=>array(
+		'name'=>'New York Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'pleasetakemycar.com'=>array(
+		'name'=>'Please Take My Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'pleasetowmycar.com'=>array(
+		'name'=>'Please Tow My Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'polltronic.com'=>array(
+		'name'=>'Poll Tronic',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'promptpayprocessing.com'=>array(
+		'name'=>'Prompt Pay Processing',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'quiztronic.com'=>array(
+		'name'=>'Quiz Tronic',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'quotecashbuy.com'=>array(
+		'name'=>'Quote Cash Buy',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'quotecashtow.com'=>array(
+		'name'=>'Quote Cash Tow',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'sajunkcar.com'=>array(
+		'name'=>'SA Junk Car',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'sanantoniofeature.com'=>array(
+		'name'=>'San Antonio Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'tablequick.com'=>array(
+		'name'=>'Table Quick',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'usafeature.com'=>array(
+		'name'=>'USA Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'valuemyautomobile.com'=>array(
+		'name'=>'Value My Automobile',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'vancouverfeature.com'=>array(
+		'name'=>'Vancouver Feature',
 		'ga_code'=>'UA-XXXXX-X',
 	),
 );
