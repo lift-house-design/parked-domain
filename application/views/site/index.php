@@ -15,4 +15,3 @@
 	<?php echo form_submit('send','Send Message') ?>
 </div>
 <?php echo form_close() ?>
-<?php var_dump($_SERVER['HTTP_HOST']) ?>

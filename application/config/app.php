@@ -35,8 +35,14 @@ $config['database']=array(
 |--------------------------------------------------------------------------
 */
 $config['domains']=array(
-	'austinfeature.com'=>'Austin Feature',
-	'domainforsale.com'=>'Domain For Sale',
+	'austinfeature.com'=>array(
+		'name'=>'Austin Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'domainforsale.com'=>array(
+		'name'=>'Domain For Sale',
+		'ga_code'=>'UA-XXXXX-X',
+	),
 );
 
 /*
@@ -83,14 +89,19 @@ $config['module_path']=APPPATH.'modules';
 |
 */
 $regexp='/(https?\:\/\/)?(www\.)?(.+)/';
-if(preg_match($regexp,$_SERVER['HTTP_HOST'],$matches))
+if(preg_match($regexp,$_SERVER['HTTP_HOST'],$matches) && !empty($config['domains'][$matches[3]]))
 {
 	$site_name_key=$matches[3];
-	$config['site_name']=$config['domains'][$site_name_key];
+	$site_name=empty($config['domains'][$site_name_key]['name']) ? $_SERVER['HTTP_HOST'] : $config['domains'][$site_name_key]['name'];
+	$ga_code=empty($config['domains'][$site_name_key]['ga_code']) ? FALSE : $config['domains'][$site_name_key]['ga_code'];
+	
+	$config['site_name']=$site_name;
+	$config['ga_code']=$ga_code;
 }
 else
 {
 	$config['site_name']=$config['base_url'];
+	$config['ga_code']=FALSE;
 }
 	
 //$config['site_name']='Project Template';
@@ -107,7 +118,7 @@ $config['copyright_format']='Copyright &copy; %1$s %2$d. All Rights Reserved.';
 |						to disable
 |
 */
-$config['ga_code']=FALSE;
+//$config['ga_code']=FALSE;
 
 /*
 |--------------------------------------------------------------------------
