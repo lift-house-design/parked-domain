@@ -48,11 +48,31 @@ else
 |--------------------------------------------------------------------------
 */
 $config['domains']=array(
+	'agent2buyer.com'=>array(
+		'name'=>'Agent to Buyer',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'agenttobuyer.com'=>array(
+		'name'=>'Agent to Buyer',
+		'ga_code'=>'UA-XXXXX-X',
+	),
 	'austinfeature.com'=>array(
 		'name'=>'Austin Feature',
 		'ga_code'=>'UA-XXXXX-X',
 	),
+	'austinhousehunting.biz'=>array(
+		'name'=>'Austin House Hunting',
+		'ga_code'=>'UA-XXXXX-X',
+	),
 	'austinhousehunting.com'=>array(
+		'name'=>'Austin House Hunting',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'austinhousehunting.net'=>array(
+		'name'=>'Austin House Hunting',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'austinhousehunting.org'=>array(
 		'name'=>'Austin House Hunting',
 		'ga_code'=>'UA-XXXXX-X',
 	),
@@ -80,6 +100,10 @@ $config['domains']=array(
 		'name'=>'Cash Out My Car',
 		'ga_code'=>'UA-XXXXX-X',
 	),
+	'compositestoneproducts.com'=>array(
+		'name'=>'Composite Stone Products',
+		'ga_code'=>'UA-XXXXX-X',
+	),
 	'dallasfeature.com'=>array(
 		'name'=>'Dallas Feature',
 		'ga_code'=>'UA-XXXXX-X',
@@ -89,6 +113,10 @@ $config['domains']=array(
 		'ga_code'=>'UA-XXXXX-X',
 	),
 	'foundnowtext.com'=>array(
+		'name'=>'Found Now Text',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'foundnowtext.org'=>array(
 		'name'=>'Found Now Text',
 		'ga_code'=>'UA-XXXXX-X',
 	),
@@ -106,6 +134,10 @@ $config['domains']=array(
 	),
 	'lifthouseholdings.com'=>array(
 		'name'=>'Lift House Holdings',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'lifthouselab.com'=>array(
+		'name'=>'Lift House Lab',
 		'ga_code'=>'UA-XXXXX-X',
 	),
 	'likemyhouse.com'=>array(
@@ -144,7 +176,19 @@ $config['domains']=array(
 		'name'=>'Prompt Pay Processing',
 		'ga_code'=>'UA-XXXXX-X',
 	),
+	'quiztronic.biz'=>array(
+		'name'=>'Quiz Tronic',
+		'ga_code'=>'UA-XXXXX-X',
+	),
 	'quiztronic.com'=>array(
+		'name'=>'Quiz Tronic',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'quiztronic.net'=>array(
+		'name'=>'Quiz Tronic',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'quiztronic.org'=>array(
 		'name'=>'Quiz Tronic',
 		'ga_code'=>'UA-XXXXX-X',
 	),
@@ -162,6 +206,10 @@ $config['domains']=array(
 	),
 	'sanantoniofeature.com'=>array(
 		'name'=>'San Antonio Feature',
+		'ga_code'=>'UA-XXXXX-X',
+	),
+	'stoneaesthetics.com'=>array(
+		'name'=>'Stone Aesthetics',
 		'ga_code'=>'UA-XXXXX-X',
 	),
 	'tablequick.com'=>array(
