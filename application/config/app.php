@@ -356,7 +356,7 @@ $config['sms_notifications']=array(
 |--------------------------------------------------------------------------
 */
 $config['contact_form']=array(
-	'send_to'=>'nick@mvbeattie.com',
+	'send_to'=>'bain.lifthousedesign@gmail.com',
 );
 
 /* End of file app.php */
