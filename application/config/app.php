@@ -50,11 +50,11 @@ else
 $config['domains']=array(
 	'agent2buyer.com'=>array(
 		'name'=>'Agent to Buyer',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-3',
 	),
 	'agenttobuyer.com'=>array(
 		'name'=>'Agent to Buyer',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-4',
 	),
 	'austinfeature.com'=>array(
 		'name'=>'Austin Feature',
@@ -62,7 +62,7 @@ $config['domains']=array(
 	),
 	'austinhousehunting.biz'=>array(
 		'name'=>'Austin House Hunting',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-5',
 	),
 	'austinhousehunting.com'=>array(
 		'name'=>'Austin House Hunting',
@@ -70,163 +70,163 @@ $config['domains']=array(
 	),
 	'austinhousehunting.net'=>array(
 		'name'=>'Austin House Hunting',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-7',
 	),
 	'austinhousehunting.org'=>array(
 		'name'=>'Austin House Hunting',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-6',
 	),
 	'austinjunkcar.com'=>array(
 		'name'=>'Austin Junk Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-8',
 	),
 	'bostonfeature.com'=>array(
 		'name'=>'Boston Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-9',
 	),
 	'bottletronic.com'=>array(
 		'name'=>'Bottle Tronic',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-10',
 	),
 	'canadafeature.com'=>array(
 		'name'=>'Canada Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-11',
 	),
 	'cashedcar.com'=>array(
 		'name'=>'Cashed Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-12',
 	),
 	'cashoutmycar.com'=>array(
 		'name'=>'Cash Out My Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-13',
 	),
 	'compositestoneproducts.com'=>array(
 		'name'=>'Composite Stone Products',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-14',
 	),
 	'dallasfeature.com'=>array(
 		'name'=>'Dallas Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-15',
 	),
 	'dallasjunkcar.com'=>array(
 		'name'=>'Dallas Junk Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-16',
 	),
 	'foundnowtext.com'=>array(
 		'name'=>'Found Now Text',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-17',
 	),
 	'foundnowtext.org'=>array(
 		'name'=>'Found Now Text',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-18',
 	),
 	'heyscrapit.com'=>array(
 		'name'=>'Hey Scrap It',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-19',
 	),
 	'houstonfeature.com'=>array(
 		'name'=>'Houston Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-20',
 	),
 	'lajunkcar.com'=>array(
 		'name'=>'LA Junk Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-21',
 	),
 	'lifthouseholdings.com'=>array(
 		'name'=>'Lift House Holdings',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-22',
 	),
 	'lifthouselab.com'=>array(
 		'name'=>'Lift House Lab',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-23',
 	),
 	'likemyhouse.com'=>array(
 		'name'=>'Like My House',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-24',
 	),
 	'losangelesfeature.com'=>array(
 		'name'=>'Los Angeles Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-25',
 	),
 	'miamifeature.com'=>array(
 		'name'=>'Miami Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-26',
 	),
 	'myquickid.com'=>array(
 		'name'=>'My Quick ID',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-27',
 	),
 	'newyorkfeature.com'=>array(
 		'name'=>'New York Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-28',
 	),
 	'pleasetakemycar.com'=>array(
 		'name'=>'Please Take My Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-29',
 	),
 	'pleasetowmycar.com'=>array(
 		'name'=>'Please Tow My Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-30',
 	),
 	'polltronic.com'=>array(
 		'name'=>'Poll Tronic',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-31',
 	),
 	'promptpayprocessing.com'=>array(
 		'name'=>'Prompt Pay Processing',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-32',
 	),
 	'quiztronic.biz'=>array(
 		'name'=>'Quiz Tronic',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-33',
 	),
 	'quiztronic.com'=>array(
 		'name'=>'Quiz Tronic',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-34',
 	),
 	'quiztronic.net'=>array(
 		'name'=>'Quiz Tronic',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-35',
 	),
 	'quiztronic.org'=>array(
 		'name'=>'Quiz Tronic',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-36',
 	),
 	'quotecashbuy.com'=>array(
 		'name'=>'Quote Cash Buy',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-37',
 	),
 	'quotecashtow.com'=>array(
 		'name'=>'Quote Cash Tow',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-38',
 	),
 	'sajunkcar.com'=>array(
 		'name'=>'SA Junk Car',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-39',
 	),
 	'sanantoniofeature.com'=>array(
 		'name'=>'San Antonio Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-40',
 	),
 	'stoneaesthetics.com'=>array(
 		'name'=>'Stone Aesthetics',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-41',
 	),
 	'tablequick.com'=>array(
 		'name'=>'Table Quick',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-42',
 	),
 	'usafeature.com'=>array(
 		'name'=>'USA Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-43',
 	),
 	'valuemyautomobile.com'=>array(
 		'name'=>'Value My Automobile',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-44',
 	),
 	'vancouverfeature.com'=>array(
 		'name'=>'Vancouver Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-45',
 	),
 );
 
