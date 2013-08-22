@@ -143,6 +143,7 @@ class App_Controller extends CI_Controller
         $this->data['title']=empty($this->title) ? $site_name : sprintf($this->config->item('title_format'),$site_name,$this->title);
         $this->data['copyright']=$copyright;
         $this->data['ga_code']=$this->config->item('ga_code');
+        $this->data['domain']=$this->config->item('domain');
         
         /*
         |--------------------------------------------------------------------------
