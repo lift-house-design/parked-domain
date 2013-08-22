@@ -58,7 +58,7 @@ $config['domains']=array(
 	),
 	'austinfeature.com'=>array(
 		'name'=>'Austin Feature',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-1',
 	),
 	'austinhousehunting.biz'=>array(
 		'name'=>'Austin House Hunting',
@@ -66,7 +66,7 @@ $config['domains']=array(
 	),
 	'austinhousehunting.com'=>array(
 		'name'=>'Austin House Hunting',
-		'ga_code'=>'UA-XXXXX-X',
+		'ga_code'=>'UA-43422603-2',
 	),
 	'austinhousehunting.net'=>array(
 		'name'=>'Austin House Hunting',
