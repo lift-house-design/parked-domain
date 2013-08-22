@@ -55,8 +55,6 @@ class Site extends App_Controller
 
 		if(file_exists(APPPATH.'/views/site/content/'.$domain.'.php'))
 			$this->asides['well_content']='site/content/'.$domain.'.php';
-		else
-			$this->asides['well_content']='site/content/default.php';
 	}
 
 	public function captcha()

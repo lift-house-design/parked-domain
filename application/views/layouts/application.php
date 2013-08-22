@@ -30,9 +30,11 @@
 			<ul><?php echo $errors ?></ul>
 		</div>
 	<?php endif; ?>
-	<div class="well">
-		<?php echo $yield_well_content ?>
-	</div>
+	<? if(isset($yield_well_content)){ ?>
+		<div class="well">
+			<?=$yield_well_content ?>
+		</div>
+	<? } ?>
 	<?php echo $yield ?>
 
 	</div>
