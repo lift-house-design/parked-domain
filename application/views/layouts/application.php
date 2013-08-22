@@ -30,23 +30,24 @@
 			<ul><?php echo $errors ?></ul>
 		</div>
 	<?php endif; ?>
-	<? if(isset($yield_well_content)){ ?>
+	<? if(!empty($yield_well_content)){ ?>
 		<div class="well">
-			<?=$yield_well_content ?>
+			<?php echo $yield_well_content ?>
 		</div>
 	<? } ?>
 	<?php echo $yield ?>
-
 	</div>
 </div>
-	<?php echo js($js) ?>
-	<?php if($ga_code!==false): ?>
+<?php echo js($js) ?>
+<?php if($ga_code!==false): ?>
 	<script>
-		var _gaq=[['_setAccount','<?php echo $ga_code ?>'],['_trackPageview']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-		g.src='//www.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  		ga('create', '<?=$ga_code?>', '<?=$domain?>');
+  		ga('send', 'pageview');
 	</script>
-	<?php endif; ?>
+<?php endif; ?>
 </body>
 </html>

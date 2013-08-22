@@ -282,11 +282,13 @@ if(preg_match($regexp,$_SERVER['HTTP_HOST'],$matches) && !empty($config['domains
 	
 	$config['site_name']=$site_name;
 	$config['ga_code']=$ga_code;
+	$config['domain']=$site_name_key;
 }
 else
 {
 	$config['site_name']=$config['base_url'];
 	$config['ga_code']=FALSE;
+	$config['domain']='';
 }
 	
 //$config['site_name']='Project Template';
