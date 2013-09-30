@@ -15,8 +15,6 @@
 	<?php echo form_submit('send','Send Message') ?>
 </div>
 <?php echo form_close() ?>
-<<<<<<< HEAD
-=======
 <div style="height:0px;overflow:hidden">
 	<a href="http://lifthousedesign.com/">Austin Web Design</a> company, Lift House Design, offers 
 	<a href="http://lifthousedesign.com/site/web_development">Web Development</a>,
@@ -26,4 +24,3 @@
 	<a href="http://lifthousedesign.com/site/photography">Photography</a>,
 	<a href="http://lifthousedesign.com/site/videography">Videography</a>, and Voice Acting services
 </div>
->>>>>>> 4a2f32c3dd4f771940e7c6e6197affe6cfa3f222
